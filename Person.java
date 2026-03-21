@@ -2,7 +2,6 @@ class Person {
     String name;
     int age;
 
-    // Constructor
     Person(String n, int a) {
         name = n;
         age = a;
