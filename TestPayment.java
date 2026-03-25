@@ -20,7 +20,7 @@ class NetBankingPayment extends Payment {
     }
 }
 
-public class PaymentDemo {
+public class TestPayment {
     public static void main(String[] args) {
         Payment p;
 
