@@ -2,35 +2,35 @@ abstract class Payment {
     abstract void pay(double amount);
 }
 
-class CreditCard extends Payment {
+class CreditCardPayment extends Payment {
     void pay(double amount) {
         System.out.println("Paid " + amount + " using Credit Card");
     }
 }
 
-class UPI extends Payment {
+class UPIPayment extends Payment {
     void pay(double amount) {
         System.out.println("Paid " + amount + " using UPI");
     }
 }
 
-class Cash extends Payment {
+class NetBankingPayment extends Payment {
     void pay(double amount) {
-        System.out.println("Paid " + amount + " using Cash");
+        System.out.println("Paid " + amount + " using Net Banking");
     }
 }
 
-class TestPayment {
+public class PaymentDemo {
     public static void main(String[] args) {
         Payment p;
 
-        p = new CreditCard();
+        p = new CreditCardPayment();
         p.pay(1000);
 
-        p = new UPI();
+        p = new UPIPayment();
         p.pay(500);
 
-        p = new Cash();
-        p.pay(200);
+        p = new NetBankingPayment();
+        p.pay(2000);
     }
 }
