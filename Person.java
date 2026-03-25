@@ -13,7 +13,7 @@ class Person {
 
     public static void main(String[] args) {
         Person p1 = new Person("Saloni", 20);
-        Person p2 = new Person("Rahul", 22);
+        Person p2 = new Person("Sam", 22);
 
         p1.display();
         p2.display();
